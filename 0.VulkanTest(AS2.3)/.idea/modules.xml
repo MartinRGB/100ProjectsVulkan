@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/0.VulkanTest(AS2.3).iml" filepath="$PROJECT_DIR$/0.VulkanTest(AS2.3).iml" />
       <module fileurl="file://$PROJECT_DIR$/VulkanTest.iml" filepath="$PROJECT_DIR$/VulkanTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
