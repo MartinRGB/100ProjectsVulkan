@@ -13,10 +13,11 @@
 		2E852D301FCD44300030F389 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E852D2D1FCD44120030F389 /* OpenGL.framework */; };
 		2E852D311FCD44350030F389 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E852D2C1FCD440A0030F389 /* Cocoa.framework */; };
 		2E852D361FCD487E0030F389 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E852D321FCD446A0030F389 /* CoreVideo.framework */; };
-		2E852D3A1FCD63FD0030F389 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E852D391FCD63F60030F389 /* QuartzCore.framework */; };
-		2E852D3C1FCD64140030F389 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E852D3B1FCD64030030F389 /* Metal.framework */; };
-		2E852D3E1FCD642D0030F389 /* MoltenVK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E852D3D1FCD642D0030F389 /* MoltenVK.framework */; };
-		2E852D671FCD6B670030F389 /* IOSurface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E852D661FCD6B620030F389 /* IOSurface.framework */; };
+		2EC7CF811FD580D600148B37 /* IOSurface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EC7CF801FD580D000148B37 /* IOSurface.framework */; };
+		2EC7CF851FD5823500148B37 /* libglfw.3.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EC7CF841FD5823500148B37 /* libglfw.3.2.dylib */; };
+		2EC7CF861FD5832E00148B37 /* MoltenVK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EC7CF821FD5810900148B37 /* MoltenVK.framework */; };
+		2EC7CF881FD5835D00148B37 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EC7CF871FD5835900148B37 /* Metal.framework */; };
+		2EC7CF8A1FD5836900148B37 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EC7CF891FD5836300148B37 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,21 +34,19 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		2E852D111FCD42160030F389 /* 1.BaseCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 1.BaseCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E852D111FCD42160030F389 /* 0.VulkanTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 0.VulkanTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E852D171FCD42160030F389 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E852D1C1FCD42160030F389 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2E852D1F1FCD42160030F389 /* __BaseCode.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = __BaseCode.entitlements; sourceTree = "<group>"; };
 		2E852D281FCD42620030F389 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		2E852D2C1FCD440A0030F389 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		2E852D2D1FCD44120030F389 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		2E852D2E1FCD441C0030F389 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		2E852D321FCD446A0030F389 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
-		2E852D331FCD44C20030F389 /* libglfw.3.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.2.dylib; path = ../lib/libglfw.3.2.dylib; sourceTree = "<group>"; };
-		2E852D371FCD60470030F389 /* libglfw.3.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.2.dylib; path = ../../../../../usr/local/lib/libglfw.3.2.dylib; sourceTree = "<group>"; };
-		2E852D391FCD63F60030F389 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		2E852D3B1FCD64030030F389 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
-		2E852D3D1FCD642D0030F389 /* MoltenVK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MoltenVK.framework; path = ../../../../../../usr/local/include/Molten/MoltenVK/macOS/MoltenVK.framework; sourceTree = "<group>"; };
-		2E852D661FCD6B620030F389 /* IOSurface.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOSurface.framework; path = System/Library/Frameworks/IOSurface.framework; sourceTree = SDKROOT; };
+		2EC7CF801FD580D000148B37 /* IOSurface.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOSurface.framework; path = System/Library/Frameworks/IOSurface.framework; sourceTree = SDKROOT; };
+		2EC7CF821FD5810900148B37 /* MoltenVK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MoltenVK.framework; path = ../../../../../../usr/local/include/Molten/MoltenVK/macOS/MoltenVK.framework; sourceTree = "<group>"; };
+		2EC7CF841FD5823500148B37 /* libglfw.3.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.2.dylib; path = ../../../../../../usr/local/Cellar/glfw/3.2.1/lib/libglfw.3.2.dylib; sourceTree = "<group>"; };
+		2EC7CF871FD5835900148B37 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		2EC7CF891FD5836300148B37 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,10 +54,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E852D671FCD6B670030F389 /* IOSurface.framework in Frameworks */,
-				2E852D3E1FCD642D0030F389 /* MoltenVK.framework in Frameworks */,
-				2E852D3C1FCD64140030F389 /* Metal.framework in Frameworks */,
-				2E852D3A1FCD63FD0030F389 /* QuartzCore.framework in Frameworks */,
+				2EC7CF8A1FD5836900148B37 /* QuartzCore.framework in Frameworks */,
+				2EC7CF881FD5835D00148B37 /* Metal.framework in Frameworks */,
+				2EC7CF861FD5832E00148B37 /* MoltenVK.framework in Frameworks */,
+				2EC7CF851FD5823500148B37 /* libglfw.3.2.dylib in Frameworks */,
+				2EC7CF811FD580D600148B37 /* IOSurface.framework in Frameworks */,
 				2E852D361FCD487E0030F389 /* CoreVideo.framework in Frameworks */,
 				2E852D301FCD44300030F389 /* OpenGL.framework in Frameworks */,
 				2E852D311FCD44350030F389 /* Cocoa.framework in Frameworks */,
@@ -72,7 +72,7 @@
 		2E852D081FCD42160030F389 = {
 			isa = PBXGroup;
 			children = (
-				2E852D131FCD42160030F389 /* 1.BaseCode */,
+				2E852D131FCD42160030F389 /* 0.VulkanTest */,
 				2E852D121FCD42160030F389 /* Products */,
 				2E852D251FCD42320030F389 /* Frameworks */,
 			);
@@ -81,31 +81,29 @@
 		2E852D121FCD42160030F389 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2E852D111FCD42160030F389 /* 1.BaseCode.app */,
+				2E852D111FCD42160030F389 /* 0.VulkanTest.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2E852D131FCD42160030F389 /* 1.BaseCode */ = {
+		2E852D131FCD42160030F389 /* 0.VulkanTest */ = {
 			isa = PBXGroup;
 			children = (
 				2E852D171FCD42160030F389 /* Assets.xcassets */,
 				2E852D281FCD42620030F389 /* main.cpp */,
 				2E852D1C1FCD42160030F389 /* Info.plist */,
-				2E852D1F1FCD42160030F389 /* __BaseCode.entitlements */,
 			);
-			path = 1.BaseCode;
+			path = 0.VulkanTest;
 			sourceTree = "<group>";
 		};
 		2E852D251FCD42320030F389 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2E852D661FCD6B620030F389 /* IOSurface.framework */,
-				2E852D3D1FCD642D0030F389 /* MoltenVK.framework */,
-				2E852D3B1FCD64030030F389 /* Metal.framework */,
-				2E852D391FCD63F60030F389 /* QuartzCore.framework */,
-				2E852D331FCD44C20030F389 /* libglfw.3.2.dylib */,
-				2E852D371FCD60470030F389 /* libglfw.3.2.dylib */,
+				2EC7CF891FD5836300148B37 /* QuartzCore.framework */,
+				2EC7CF871FD5835900148B37 /* Metal.framework */,
+				2EC7CF841FD5823500148B37 /* libglfw.3.2.dylib */,
+				2EC7CF821FD5810900148B37 /* MoltenVK.framework */,
+				2EC7CF801FD580D000148B37 /* IOSurface.framework */,
 				2E852D321FCD446A0030F389 /* CoreVideo.framework */,
 				2E852D2E1FCD441C0030F389 /* IOKit.framework */,
 				2E852D2D1FCD44120030F389 /* OpenGL.framework */,
@@ -117,9 +115,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2E852D101FCD42160030F389 /* 1.BaseCode */ = {
+		2E852D101FCD42160030F389 /* 0.VulkanTest */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2E852D221FCD42160030F389 /* Build configuration list for PBXNativeTarget "1.BaseCode" */;
+			buildConfigurationList = 2E852D221FCD42160030F389 /* Build configuration list for PBXNativeTarget "0.VulkanTest" */;
 			buildPhases = (
 				2E852D0D1FCD42160030F389 /* Sources */,
 				2E852D0E1FCD42160030F389 /* Frameworks */,
@@ -130,9 +128,9 @@
 			);
 			dependencies = (
 			);
-			name = 1.BaseCode;
+			name = 0.VulkanTest;
 			productName = 1.BaseCode;
-			productReference = 2E852D111FCD42160030F389 /* 1.BaseCode.app */;
+			productReference = 2E852D111FCD42160030F389 /* 0.VulkanTest.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -150,7 +148,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2E852D0C1FCD42160030F389 /* Build configuration list for PBXProject "1.BaseCode" */;
+			buildConfigurationList = 2E852D0C1FCD42160030F389 /* Build configuration list for PBXProject "0.VulkanTest" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -163,7 +161,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2E852D101FCD42160030F389 /* 1.BaseCode */,
+				2E852D101FCD42160030F389 /* 0.VulkanTest */,
 			);
 		};
 /* End PBXProject section */
@@ -304,16 +302,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = 1.BaseCode/__BaseCode.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/usr/local/include/Molten/MoltenVK/macOS,
 				);
-				INFOPLIST_FILE = 1.BaseCode/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/0.VulkanTest/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.MartinStudio.--BaseCode";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/glfw/3.2.1/lib,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.MartinStudio.VulkanTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -322,16 +324,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = 1.BaseCode/__BaseCode.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/usr/local/include/Molten/MoltenVK/macOS,
 				);
-				INFOPLIST_FILE = 1.BaseCode/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/0.VulkanTest/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.MartinStudio.--BaseCode";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/glfw/3.2.1/lib,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.MartinStudio.VulkanTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -339,7 +345,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2E852D0C1FCD42160030F389 /* Build configuration list for PBXProject "1.BaseCode" */ = {
+		2E852D0C1FCD42160030F389 /* Build configuration list for PBXProject "0.VulkanTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2E852D201FCD42160030F389 /* Debug */,
@@ -348,7 +354,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2E852D221FCD42160030F389 /* Build configuration list for PBXNativeTarget "1.BaseCode" */ = {
+		2E852D221FCD42160030F389 /* Build configuration list for PBXNativeTarget "0.VulkanTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2E852D231FCD42160030F389 /* Debug */,
