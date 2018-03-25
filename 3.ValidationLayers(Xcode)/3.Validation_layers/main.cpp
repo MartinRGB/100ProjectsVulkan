@@ -5,6 +5,10 @@
 #include <stdexcept>
 #include <vector>
 #include <cstring>
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/master
 
 // If you run Vulkan in macOS,you need add this
 #include <Molten/MoltenVK/include/MoltenVK/mvk_vulkan.h>
@@ -66,6 +70,7 @@ private:
         createInstance();
         setupDebugCallback();
     }
+<<<<<<< HEAD
     
     void mainLoop() {
         while (!glfwWindowShouldClose(window)) {
@@ -73,6 +78,15 @@ private:
         }
     }
     
+=======
+    
+    void mainLoop() {
+        while (!glfwWindowShouldClose(window)) {
+            glfwPollEvents();
+        }
+    }
+    
+>>>>>>> origin/master
     void cleanup() {
         DestroyDebugReportCallbackEXT(instance, callback, nullptr);
         vkDestroyInstance(instance, nullptr);
@@ -127,6 +141,7 @@ private:
             throw std::runtime_error("failed to set up debug callback!");
         }
     }
+<<<<<<< HEAD
     
     std::vector<const char*> getRequiredExtensions() {
         std::vector<const char*> extensions;
@@ -146,6 +161,27 @@ private:
         return extensions;
     }
     
+=======
+    
+    std::vector<const char*> getRequiredExtensions() {
+        std::vector<const char*> extensions;
+        
+        uint32_t glfwExtensionCount = 0;
+        const char** glfwExtensions;
+        glfwExtensions = glfwGetRequiredInstanceExtensions(&glfwExtensionCount);
+        
+        for (uint32_t i = 0; i < glfwExtensionCount; i++) {
+            extensions.push_back(glfwExtensions[i]);
+        }
+        
+        if (enableValidationLayers) {
+            extensions.push_back(VK_EXT_DEBUG_REPORT_EXTENSION_NAME);
+        }
+        
+        return extensions;
+    }
+    
+>>>>>>> origin/master
     bool checkValidationLayerSupport() {
         uint32_t layerCount;
         vkEnumerateInstanceLayerProperties(&layerCount, nullptr);
@@ -176,6 +212,10 @@ private:
         
         return VK_FALSE;
     }
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/master
 };
 
 int main() {
